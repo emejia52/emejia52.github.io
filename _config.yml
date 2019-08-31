@@ -18,16 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: CIT 160 Lab 1
+title: Eric Mejia Blogs
 email: eric.mejia.573@my.csun.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A CIT 480 student at CSUN attempting to perform tasks similar to what will be practiced in a professional work environment by 
+  analyzing CIT assignments to see how they can be improved to help other students gain a better understanding of the material they 
+  are learning.
+  
 baseurl: "emejia52.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: 
+github_username:  emejia52
 
 # Build settings
 theme: minima
