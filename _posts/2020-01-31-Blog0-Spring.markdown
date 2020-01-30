@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blog 0"
+title:  "Blog 0: Proxmox"
 date:   2020-01-30 10:00:00 -0700
 categories: Setting up Proxmox
 ---
