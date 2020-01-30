@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog 0"
-date:   2020-01-31 10:26:40 -0700
+date:   2020-01-30 10:00: 00 -0700
 categorie Setting up Proxmox
 ---
  The purpose behind Lab A for the CIT 160 class is to introduce CIT students to using shells to access remote servers through 
