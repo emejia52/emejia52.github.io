@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CIT 160 Lab 1 Critique"
+title:  "CIT 160 Lab 1 "
 date:   2019-08-30 17:26:40 -0700
 categories: jekyll update
 ---
