@@ -14,3 +14,4 @@ Proxmox allows the user to adjust the scaling of storage and resources to meet t
 
 This will add the node into the cluster and allow the user to access it from the Proxmox GUI.
 
+ - [Proxmox Documentation](https://pve.proxmox.com/wiki/Main_Page)
