@@ -12,7 +12,7 @@ Proxmox is a Debian open source platform that allows for the virtualization of I
 
 Proxmox allows the user to adjust the scaling of storage and resources to meet the purposes of the applications on a single interface. Clustering multiple nodes through the interface is easy to accomplish and allows the user to adjust all connected nodes from one interface.  New nodes can be added with relative ease through the command: 
 
-hp2# pvecm add IP-ADDRESS-CLUSTER
+ #  hp2# pvecm add IP-ADDRESS-CLUSTER
 
 This will add the node into the cluster and allow the user to access it from the Proxmox GUI.
 
