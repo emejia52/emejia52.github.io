@@ -31,7 +31,8 @@ twitter_username:
 github_username:  emejia52
 
 # Build settings
-theme: Alembic
+theme: minima
+
 plugins:
   - jekyll-feed
 
