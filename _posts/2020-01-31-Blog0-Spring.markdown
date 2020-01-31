@@ -4,8 +4,15 @@ title:  "Blog 0: Proxmox"
 date:   2020-01-30 10:00:00 -0700
 categories: Setting up Proxmox
 ---
- The purpose behind Lab A for the CIT 160 class is to introduce CIT students to using shells to access remote servers through 
-the popular program Docker. SSH and Docker requires the students to go to other URLs to download programs for installation with options for MAC, Linux machines, and Windows. Accessing SSH through the CSUN sandbox and setting the CIT 160 container required for the student to follow a specific set of commands that the student could easily misread or skip if they are not paying enough attention. Spacing the
-instructions in the word document would help the student read the commands more thoroughly and better understand the purpose behind each command. The lab can be seen as simple to a student that reads through all the instructions and
-,but can quite easily become confusing when students attempt to rush or have their attentions elsewhere when completing their lab. Giving students an easier way to distinguish each command with more spacing between the lines and making the 
-lab more interactive would be very useful. Making the students more interested in what they are doing would help prevent any easily avoidable mistakes. 
+Proxmox is a Debian open source platform that allows for the virtualization of IT infrastructure through KVM hypervisors and LXC containers. Proxmox is a useful tool in maximizing resources as it provides an easy to maneuver GUI and command line interface for creating new virtual machines and configuring already existing nodes. Proxmox can be installed on to hypervisors such as Virtualbox and VMware through ISO images, usb drives and CD roms, or on bare-metal hardware such as SSDs. 
+
+
+
+
+
+Proxmox allows the user to adjust the scaling of storage and resources to meet the purposes of the applications on a single interface. Clustering multiple nodes through the interface is easy to accomplish and allows the user to adjust all connected nodes from one interface.  New nodes can be added with relative ease through the command: 
+
+hp2# pvecm add IP-ADDRESS-CLUSTER
+
+This will add the node into the cluster and allow the user to access it from the Proxmox GUI.
+
