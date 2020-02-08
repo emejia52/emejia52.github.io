@@ -5,5 +5,28 @@ date:   2020-02-07 10:00:00 -0700
 categories: Creating EC2s
 ---
 
+Creating new EC2 Instances on AWS is fairly easy and can be very cost effective. 
 
-Hello 
+The first step in setting up the EC2 is selecting a instance, which can be a Linux or Windows instance, and for the sake of this blog I will select the Linux instance Amazon Linux AMI. 
+
+Next in the Configure Instance Details I have to add an initialization script that will install and start the Apache serve. 
+
+#! /bin/sh
+Yum -y install httpd php
+Chkconfig httpd on
+/etc/init.d/httpd start
+
+For the Add Storage section keep the default setting, and add a Tag instance with a name in the Value box to identify the EC2 instance earlier. 
+
+Add a security group in the Configure Security Group/ Then proceed to click Add Rule withe Type HTTP which will allow for requests from the internet. 
+
+In the Key pair dialog box select new Key pair, enter the name of key pair, and download it as a PEM file placing it in a secure folder. Finally click Launch Instance and ensure the status of the instance is running. 
+
+To connect to the EC2 instance from a Windows computer open a command prompt inside of the folder that contains your PEM file and enter the command: 
+
+# ssh -i [name of my pem file] ec2-user@<public DNS>
+
+
+
+  
+
