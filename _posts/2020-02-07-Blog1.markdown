@@ -24,7 +24,7 @@ In the Key pair dialog box select new Key pair, enter the name of key pair, and 
 
 To connect to the EC2 instance from a Windows computer open a command prompt inside of the folder that contains your PEM file and enter the command: 
 
-# ssh -i [name of my pem file] ec2-user@(public DNS)
+# ssh -i [name of my pem file] ec2-user@ (public DNS)
 
 
 
