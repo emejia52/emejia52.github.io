@@ -11,10 +11,10 @@ The first step in setting up the EC2 is selecting a instance, which can be a Lin
 
 Next in the Configure Instance Details I have to add an initialization script that will install and start the Apache serve. 
 
-#! /bin/sh   <br>
-Yum -y install httpd php  <br>
-Chkconfig httpd on  <br>
-/etc/init.d/httpd start  <br>
+ # #! /bin/sh   <br>
+# Yum -y install httpd php  <br>
+# Chkconfig httpd on  <br>
+# /etc/init.d/httpd start  <br>
 
 For the Add Storage section keep the default setting, and add a Tag instance with a name in the Value box to identify the EC2 instance earlier. 
 
