@@ -1,1 +1,8 @@
+---
+layout: post
+title:  "Blog 2: "
+date:   2020-02-07 10:00:00 -0700
+categories: Creating EC2s
+---
+
 Hello
