@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog 2: Hosting a Static Website on a S3 bucket"
-date:   2020-02-07 10:00:00 -0700
+date:   2020-02-14 10:00:00 -0700
 categories: AWS S3 bucket
 ---
 
