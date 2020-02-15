@@ -1,8 +1,31 @@
 ---
 layout: post
-title:  "Blog 2: "
+title:  "Blog 2: Hosting a Static Website on a S3 bucket"
 date:   2020-02-07 10:00:00 -0700
-categories: Creating EC2s
+categories: AWS S3 bucket
 ---
 
-Hello
+# Hosting a Website on a S3 Bucket
+
+The Amazon S3 Bucket is a storage service provided by AWS that allows organizations to store their information, host websites, and backup information. The S3 bucket is capable of hosting a static website requires low cost maintenance and can be easily updated by the user. 
+
+First, login to AWS and look for the S3 bucket in the services tab. Next click the create bucket button and a page will appear to add a name for the bucket and the location of where you want the bucket to be. Click the next button.
+
+Next the Configure Options can all be left to the default setting, and you can move on to the Permission sections. In the Permission section uncheck the Block all Public Access so that people will be able to view the website. Click Next, and then Create Bucket. 
+
+Now click on your S3 bucket and go to the Properties tag. There will be a module that is called Static website hosting. Click in this and enable:
+ 
+ # Use this bucket to host a website.  
+
+Here you can also find the link that will lead to your final website, called Endpoint, it should look something similar to: 
+http://class-search.s3-website-us-west-1.amazonaws.com
+
+When the contents of the website are uploaded the S3 bucket will look for the index.html file as the website splash page. 
+
+Finally to upload the test files for the website, go to the Overview tab. There should be an upload button to click. This will allow the user to either drag and drop the text files, or to find them in the computer. The final website can be found through the the Endpoint link seen in the Static Website hosting module. 
+
+
+Adding a domain can be done after the purchase of a domain name and placing it in the Static Website hosting. Click on redirect requests and enter your domain name in the Target bucket text box. 
+
+The website should be up and running now and any updates that be done by reuploading new text files to the S3 bucket. 
+
