@@ -9,7 +9,7 @@ categories: AWS S3 bucket
 
 The Amazon S3 Bucket is a storage service provided by AWS that allows organizations to store their information, host websites, and backup information. The S3 bucket is capable of hosting a static website that is low maintenance and can be easily updated by the user. 
 
-First, login to AWS and look for the S3 bucket in the services tab. Next click the create bucket button and a page will appear to add a name for the bucket and the location of where you want the bucket to be. Add yje desired name and location, then click the next.
+First, login to AWS and look for the S3 bucket in the services tab. Next click the create bucket button and a page will appear to add a name for the bucket and the location of where you want the bucket to be. Add the desired name and location, then click the next.
 
 Next the Configure Options can all be left to the default setting, and you can move on to the Permission sections. In the Permission section uncheck the Block all Public Access so that people will be able to view the website. Click Next, and then Create Bucket. 
 
