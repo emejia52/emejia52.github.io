@@ -5,4 +5,33 @@ date:   2020-02-14 10:00:00 -0700
 categories: Terraform
 ---
 
-Hello
+Creating Instances using Terraform
+
+Terraform is a tool that allows users to manage and create Infrastructure from code that can be connected to automated services such as AWS and Azure. The different instances can all be configured from a single script or multiple scripts all ran at the time. In this blog I will discuss creating EC2 instances with the key pairs that allow for users to access the EC2 instance. 
+
+
+
+The first segment of code declares the service provider and the region the instance should be created in. 
+
+provider "aws" {
+  region = "us-west-2"
+}
+The next segment describes the type of AMI the instance will use by replacing {data.aws_ami.ubuntu.id} with the ami-ID and stating the instance type. Adding tags will name the instance for the user to easily distinguish the EC2 instance in the AWS GUI. 
+resource "aws_instance" "web" {
+  ami           = "${data.aws_ami.ubuntu.id}"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "HelloWorld"
+  }
+}
+Adding the last piece of code will attach a key pair to the instance that will permit users with the key pair to SSH to the EC2. 
+resource "aws_key_pair" "deployer" {
+  key_name   = "deployer-key"
+}
+To run the script the user must first run the command Terraform Init inside of the directory that holds the terraform file. This will initialize the Terraform environment and allow for the script to be run through the command :
+ <br> Terraform Plan
+<br> This will check for any errors in the file and if it finds none then will allow the user to run the command: 
+<br> Terraform Apply 
+<br> The instance is now made and can be viewed in the running instances in the AWS console. 
+
