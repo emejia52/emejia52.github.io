@@ -1,1 +1,8 @@
-hello
+---
+layout: post
+title:  "Blog 3: Creating EC2s in Terraform"
+date:   2020-02-14 10:00:00 -0700
+categories: Terraform
+---
+
+Hello
