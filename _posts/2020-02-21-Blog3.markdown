@@ -5,7 +5,7 @@ date:   2020-02-14 10:00:00 -0700
 categories: Terraform
 ---
 
-Creating Instances using Terraform
+# Creating Instances using Terraform
 
 Terraform is a tool that allows users to manage and create Infrastructure from code that can be connected to automated services such as AWS and Azure. The different instances can all be configured from a single script or multiple scripts all ran at the time. In this blog I will discuss creating EC2 instances with the key pairs that allow for users to access the EC2 instance. 
 
