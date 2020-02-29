@@ -2,7 +2,18 @@
 layout: post
 title:  "Blog 4: Creating ELB in Terraform"
 date:   2020-02-28 10:00:00 -0700
-categories: Terraform
+categories: ELB
 ---
 
-hello
+# Creating Elastic Load Balancers on AWS
+
+An Elastic Load Balancer can be connected to multiple instances and manage any incoming traffic to ensure that the instances don't become overwhelmed. The ELB can perform health checks on the instances and move traffic to the instances in healthier states or in different availability zones. The ELB can be connected to a VPC that allows for the user to add security roles along with connecting it to a Lambda function that monitors the instances and can trigger events related to the amount of traffic or  the health states of the instances.  
+
+When creating ELBs on the AWS console, the first step is choosing whether the ELB will handle web application requests or network requests for static IP addresses. The HTTPS requests are for lower more flexible requests while the network load balancer is for more performance extensive services and UDP requests. 
+
+The next step is setting a port listener for the load balancer to monitor any incoming traffic, the basic port is port 80 for HTTP requests. Another thing that must be set is the Availability Zones the ELB will move the traffic between and the two subnets the instances are located in. 
+
+Next is setting a target group of instances and the port that the ELB will use to send traffic when any of the instances is in an unhealthy state. On this console the user can set the health check setting, which will set how many times an instance must pass a health check to be considered healthy. An interval can be set for each time a health check is performed and the amount of time between each check. 
+
+The last step is to select the instances to be placed in the target group. 
+
