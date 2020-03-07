@@ -1,4 +1,9 @@
-
+---
+layout: post
+title:  "Blog 5: Using AWS Lambda Functions"
+date:   2020-03-06 10:00:00 -0700
+categories: Lambda
+---
 # AWS Lambda Functions
 AWS Lambda functions help users manage servers by allowing them to upload code that tells the server to perform a certain action when an event is triggered. This can be stopping a server at a certain time of day and restarting it in the morning. Lambda functions are very useful to managing a server without having to manually monitor the server. 
 
