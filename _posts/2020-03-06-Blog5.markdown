@@ -1,1 +1,13 @@
-hello
+
+# AWS Lambda Functions
+AWS Lambda functions help users manage servers by allowing them to upload code that tells the server to perform a certain action when an event is triggered. This can be stopping a server at a certain time of day and restarting it in the morning. Lambda functions are very useful to managing a server without having to manually monitor the server. 
+
+To create a Lambda function using the AWS console first click on the Create function button. 
+
+In the next section enter the name of the function, and again click Create function. 
+
+The next page is the Designer page, which will display the destination of the lambda function, the triggers, and the layers the user has configured the lambda function to navigate through. 
+
+To add the Lambda code click on the Test button on the right corner and this will lead you to the Configure Test run popup. Here JSON code can be added to manage server and trigger events. 
+
+Once the code is added it can be tested by pressing the Test button again. The console provides a Monitor tab that allows the user to see the results of the JSON code to see whether the server acted appropriately.  
