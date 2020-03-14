@@ -1,6 +1,26 @@
 ---
 layout: post
-title:  "Blog 6: Attaching Volumes to Instancees"
+title:  "Blog 6: Attaching Volumes to Instances"
 date:   2020-03-13 10:00:00 -0700
 categories: AWS
 ---
+
+# Attaching Volumes to an EC2 Instance 
+
+
+The Amazon Elastic Block Store volumes allows for the user to easily attach storage resources to instances on AWS. The volumes run independently of the instances as they can be attached to multiple instances without having any of the instances running. This can be used as a boot partition and stopped to preserve the resources to shorten the cost for the user. 
+
+To create an EBS volume the user goes to the Volume section in the EC2 dashboard. The user will enter a Volume type, Volume Size, Availability Zone, and a tag name.
+
+Next, to attach the volume click the actions button and then select the option Attach volume. Select the instance that the user wants to attach to the volume and the console will add device name. 
+
+Finally, click on the Attach button to, and the dashboard will state that it is currently in use. 
+
+To mount the volume to the instance the user needs to login to the instance and create an ext3 file system. Use the command: <br>
+sudo mkfs -t ext3 /dev/sdf <br>
+
+Next create a directory that the volume will be mounted on. 
+To mount the volume use command: <br>
+sudo mount /dev/sdf /mnt/data-store <br>
+
+The volume should now be attached and new items can be placed in the volume directory. Any files in the volume can be moved between different instances by removing the volume from the current instance and attaching it to new one. 
