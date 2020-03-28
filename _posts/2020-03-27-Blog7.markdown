@@ -7,3 +7,17 @@ categories: AWS
 
 # Introduction to AWS Relational Databases
 
+AWS provides users the ability to create Relational databases that can be scalable in a cloud environment. AWS provides database instances that can easily be modified and backed up within the AWS console. 
+
+The first step is to go to the Database tab in the services and click the Create Database button. <br>
+
+ On the Create Database page, choose the Standard Create and an engine type, such as MySQL. <br>
+ 
+For the Template section choose, Dev/Test. In the Setting section, enter an instance identifier, Master username, and a master password.<br>
+
+When choosing the DB instance size select Burstable for performance size and for instance class choose db.t2.small. <br>
+
+In the Connectivity section the user will add the virtual private cloud that the RDS will be connected to. The RDS needs to be attached to a subnet group within the VPC and Public accessibility needs to be disallowed. No availability zone needs to be selected and the database port needs to be set to 3306. <br>
+
+For the final step click the Create Database button and the database should appear in the Database list. To connect to the database the Endpoint can be found in the Connectivity and security tab.  
+
