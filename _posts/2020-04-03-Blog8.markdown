@@ -10,26 +10,35 @@ categories: AWS
 
 Amazon provides the ability to create a virtual network that will meet the needs of the users called Virtual Private Cloud (VPC). In the VPC the user can create multiple private and public subnets, routing tables to maneuver traffic, and network gateways that controls how people can gain access to instances inside of the network. The VPC can be attached to any instance and modified through security groups and access control lists.  <br>
 
-
+<br>
 To create a VPC the user must go to the VPC dashboard on the services section of AWS. From the dashboard click Launch VPC Wizard.
 <br>
+<br>
 On the configuration page select the VPC that you would like to create and click the Select button. 
+<br>
 <br>
  Next you will enter a name for the VPC and different names for the Subnets that make it easy to identify each Subnet. 
 In the Configuration settings the user can set the CIDR block that will display the IP range the VPC will use and the Public Subnet IPv4 range. The Availability Zones for the VPC and the multiple subnets can also be set  on the configuration page along with the Service Endpoints.
 <br>
+<br>
 After all settings have been configured click OK to create the VPC.  
 <br>
+<br>
 Next the user should add a Security group that allows HTTP, HTTPS, and SSH inbound requests. To add a Security Group scroll down the left hand panel and select Security Group. Click Create Security Group. 
+<br>
 <br>
 The user will now add a name for the group and a Name Tag to identify the group. 
 Click the Yes, Create Button. 
 <br>
+<br>
 To add the rules for the Security Group select the security group you just created in the Security group panel and then click on the Inbound rules tab. 
+<br>
 <br>
 Click Edit Rules
 <br>
+<br>
 In the type column Select HTTP and set the source to 0.0.0.0/0 to allow HTTP requests. 
 Click Add another rule. In the type column Select HTTPS and set the source to 0.0.0.0/0 to allow HTTPS requests. Repeat this process to add  the SSH rule by selecting SSH at the type and again entering 0.0.0.0/0 for the source. 
+<br>
 <br>
 Now the VPC should have a working VPC that allows for HTTP, HTTPS, and SSH requests. 
