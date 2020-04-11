@@ -1,1 +1,26 @@
-hu
+---
+layout: post
+title:  "Blog 9: AWS Bastion Host"
+date:   2020-04-010 10:00:00 -0700
+categories: AWS
+---
+
+# What is a Bastion host?
+
+An AWS Bastion host serves as gateways for instances in a Private Network to communicate with the internet. The bastion serves as a protective measure from potential intruders as the instances located inside of a private subnet are configured to only be accessible from the bastion host which is located in a public subnet. Anybody attempting to access these instances must first go through the bastion host that will act like a firewall to protect the instances in a private network. 
+<br> 
+<br>
+To create a bastion host you must first create a EC2 instance that will be configured as the bastion. The AMI can be the free-tier micro sized instance type and all other settings can be left on default. 
+<br>
+<br>
+Next we create a security group that allows for the instance to receive SSH requests from port 22 and the source IP as “My IP”.
+<br>
+<br>
+Next you will create a security group that will be attached to the other instances in the private network that will only allow SSH requests from the bastion’s IP address. Go to the Security Group tab, and click Create Security Group. 
+<br>
+<br>
+Add a name and description, then click on add Inbound Rule. In type select SSH, port range as 22, and source should be the IP address of the bastion. 
+<br>
+<br>
+Finally click Add rule, this will create the security group that can be attached to any instances in the private network. 
+
