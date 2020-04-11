@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Blog 9: AWS Bastion Host"
-date:   2020-04-010 10:00:00 -0700
+date:   2020-04-10 10:00:00 -0700
 categories: AWS
 ---
 
