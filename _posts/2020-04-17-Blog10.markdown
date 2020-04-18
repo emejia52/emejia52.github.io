@@ -1,1 +1,8 @@
+---
+layout: post
+title:  "Blog 10: AWS Autoscaling"
+date:   2020-04-17 10:00:00 -0700
+categories: AWS
+---
+
 hi
