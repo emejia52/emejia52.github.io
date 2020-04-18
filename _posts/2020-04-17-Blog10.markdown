@@ -5,4 +5,32 @@ date:   2020-04-17 10:00:00 -0700
 categories: AWS
 ---
 
-hi
+# AWS Autoscaling 
+
+
+AWS Autoscaling allows for users to adjust to the amount of traffic that any of their servers is receiving and ensure that there is no drop in performance by automatically creating new clone instances to ease the stress to any server. An instance can be attached to an autoscaling group that will monitor the CPU utilization of the instance and create new instances once the utilization reaches a set limit that traffic will be redirected towards the new instances.   
+<br>
+<br>
+The first step to making an autoscaling group is creating an AMI snapshot of the instances you want to attach to the autoscaling group. This is necessary as you want the autoscaling group to make clones of your instance so that it interacts with traffic the same manner the original does.
+<br>
+<br>
+Go to EC2 in Services and select your Web server instance. Click on Actions then on the Image button. Click Create Image, enter Image Name and click create image. 
+<br>
+<br>
+Next click Launch Configurations and on the left hand side there should be a Create Launch Configuration button. Click this button and go to the My AMI section and select the AMI you created earlier. 
+<br>
+<br>
+Next you will choose the Configuration setting and select the t2.micro instance type. Enter a Name and Enable CloudWatch. For Storage details you can keep the default settings. 
+<br>
+<br>
+Add security groups to the configuration instance that is attached to your web server. Then add a key pair that will allow you to access the Auto Scaling group. 
+<br>
+<br>
+Now you will create the auto scaling group, enter a group name, group size, the network the instances are in, and the subnets. 
+<br>
+<br>
+In scaling policies you can set the amount of instances you want to be in the group. The standard amount is 2 minimum and a max of 6 instances. For the Scale Group size you can set the Metric type the auto scaling will monitor and the Target Value that acts as the limit for new instances to be created. 
+<br>
+<br>
+Lastly add Tags to the group and finally Click Create Auto Scaling Group.   
+
