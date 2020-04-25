@@ -4,4 +4,19 @@ title:  "Blog 10: AWS "
 date:   2020-04-24 10:00:00 -0700
 categories: AWS
 ---
-hi
+# Wireshark Monitoring
+
+Wireshark allows for users and companies to monitor the network protocols live and capture it for analysis. Many government agencies and educational institutions use wireshark to monitor the traffic going through their network through either the GUI or TTY -mode utility. Wireshark can be used across different platforms such as Windows, Mac, or Linux machines that makes it easy for users to monitor their network. 
+<br>
+<br>
+When entering the Wireshark console the user is presented with multiple options to which network the user wants to start capturing, to capture WIFI packets the user will click on the WIFI button. 
+<br>
+<br>
+Clicking on this button will present the packets currently maneuvering through the network displaying the source of the traffic, the destination, protocol, and a description of the purpose of the packet.  
+<br>
+<br>
+To stop the capturing of traffic the user will click the large red square, this will allow for the user to analyze the most recent packets. The user can monitor where any traffic is arriving from and if there is any dangerous traffic that can be from a hacker or a DOS attack. 
+<br>
+<br>
+Wireshark allows for the user to organize the traffic based on color coordination. This helps find certain traffic in Wireshark and separate them. Wireshark allows for companies to adjust the networks by capturing what traffic is entering their network and change their firewalls to improve performances. 
+<br>
