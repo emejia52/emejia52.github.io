@@ -1,1 +1,37 @@
-hi
+---
+layout: post
+title:  "Blog 12: Docker "
+date:   2020-05-01 10:00:00 -0700
+categories: Docker
+---
+# How to create a Virtual Machine in Docker 
+
+<br>
+
+Docker allows for containerization of applications so that they can be built, run, and shared on to cloud providers for testing purposes. Docker images can be used to create virtual machines with working operating systems that use host resources though a hypervisor. These images can be used for testing purposes and saved to be implemented on to real systems.
+<br>
+<br>
+To begin creating a virtual machine the user first opens the Docker terminal. From this terminal the user is able to see any of the containers and virtual machines inside of Docker by using the command: docker-machine ls. 
+<br>
+<br>
+To create a virtual machine the user will enter the command: 
+<br>
+<br>
+docker-machine create --driver virtualbox default
+<br>
+<br>
+In this command docker uses virtualbox as a driver for the virtual machine and names the virtual machine default. 
+<br>
+<br>
+Once the installation is complete the user can view the newly created machine by again using the command: docker-machine ls. 
+<br>
+<br>
+Next we will create an environment for the virtual machine with the command; 
+Docker-machine env default. 
+<br>
+<br>
+To access this environment the user will use the command: 
+eval "$(docker-machine env default)"
+<br>
+<br>
+This allows the user to access the shell of the new virtual machine and begin to make adjustments.  
