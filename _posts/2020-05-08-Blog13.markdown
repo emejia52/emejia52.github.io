@@ -1,8 +1,33 @@
 ---
 layout: post
-title:  "Blog 13: Final "
+title:  "Blog 13: NAT Gateways "
 date:   2020-05-08 10:00:00 -0700
-categories: Final
+categories: AWS
 ---
+# NAT Gateways
+AWS provides the ability to create multiple services in their console and one of these services is a NAT Gateway. NAT gateways allow for instances to communicate from private subnets to other instances inside of the infrastructure or to the internet. The NAT gateway will not allow for any sources on the internet to communicate to any instances inside of a private subnet unless the contact was initiated by the instance. 
+<br>
+<br>
+To create a NAT gateway the user must first choose the VPC they want the NAT gateway to be located on. Go to the VPC console and push the Create NAT gateway button. 
+<br>
+<br>
+Next select the subnet the NAT gateway will be located and an allocation ID that will associate the gateway with a specific Elastic IP.
+<br>
+<br>
+Now the user can add a tag to the NAT that will allow for it to be easily identified, enter a Key name and key value. 
+<br>
+<br>
+The user can now create the NAT Gateway. 
+<br>
+<br>
+To allow for any internet traffic going towards the private subnet to maneuver to the NAT gateway first the user must modify the route table. Go to  the navigation pane and select Route table to the left. 
+<br>
+<br>
+Click on the Route table and then click the edit button for the private subnet you want to associate with the NAT gateway
+<br>
+<br>
+Now click on Add another route and for Destination add 0.0.0.0/0. This indicated that all internet traffic will be sent to the NAT Gateway. For Target click the ID of the NAT gateway. 
+<br>
+<br>
+Finally click Save. The NAT gateway should now receive any traffic that was intended to go to the private subnet and prevent it from communicating with it. Any instances in the private subnet will only be able to access the internet through this NAT gateway. 
 
-hello
